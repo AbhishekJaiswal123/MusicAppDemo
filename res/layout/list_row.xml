@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <com.andexert.library.RippleView 
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ripple:rv_type="rectangle"> -->
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ImageView 
+        android:id="@+id/MusicIconID"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher"/>
+
+    
+     <TextView
+            android:id="@+id/SONGID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:maxLines="1"
+            android:layout_toRightOf="@id/MusicIconID"
+            android:textSize="17sp" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/MusicIconID">
+
+       
+
+        <TextView
+            android:id="@+id/SONGARTISTID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="2"
+            android:layout_marginTop="20dp"
+            android:text="Artist" />
+        
+        
+        
+     <TextView
+        android:id="@+id/SONGLENGTHID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="32"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    
+    
+     
+</RelativeLayout>
+
+
+
+<!-- </com.andexert.library.RippleView>
+ -->

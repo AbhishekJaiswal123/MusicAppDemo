@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="#000000">
+    
+    <ImageView 
+        android:id="@+id/nIconForSong"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_launcher"/>
+
+    
+           
+       <LinearLayout 
+           android:layout_width="90dp"
+           android:layout_height="60dp"
+           android:orientation="vertical">
+           
+           
+          <TextView
+            android:id="@+id/nSongName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Song Name"/>
+            
+          <TextView
+            android:id="@+id/nSongArtist"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:text="Artist Name"/>
+           
+       </LinearLayout> 
+           
+        
+       <LinearLayout 
+        android:id="@+id/MusicControl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+           
+        <ImageButton
+            android:id="@+id/nbtnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_gravity="center_vertical"/>
+        
+         <ImageButton 
+                android:id="@+id/nbtnNext"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_action_next"
+                android:layout_weight="1"/>
+          
+            <ImageButton 
+                android:id="@+id/nbtnCancel"
+                android:src="@drawable/ic_action_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:background="@null"
+                android:layout_gravity="center_vertical" />
+        
+    </LinearLayout> 
+        
+    
+
+    <!--   <SeekBar 
+        android:id="@+id/ProgressBar"
+        android:layout_below="@id/nIconForSong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+     -->
+    
+    
+    
+</LinearLayout>
